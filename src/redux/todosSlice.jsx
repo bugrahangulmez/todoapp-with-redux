@@ -21,6 +21,8 @@ const todosSlice = createSlice({
         state.todo.hidden = true;
       } else if (state.category === "active") {
         state.todo.hidden = false;
+      } else if (state.category === "all") {
+        state.todo.hidden = false;
       }
       arr = [...arr, state.todo];
       state.todoList = arr;
